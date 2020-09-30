@@ -412,7 +412,8 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  margin-top: 80px;
+  font-family: "Public Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #9597A5;
@@ -440,5 +441,122 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-header {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.site-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-header__toggler {
+  display: none;
+}
+
+.logo {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+}
+
+.sitenav {
+  max-width: 756px;
+}
+
+.sitenav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+  margin-left: 14px;
+  list-style-type: none;
+}
+
+.sitenav__item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sitenav__link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 32px 0;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.1px;
+  color: #9597A5;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sitenav__link:hover {
+  color: #2D314D;
+}
+
+.sitenav__link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #30C88F;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 100%);
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  content: "";
+}
+
+.sitenav__link:hover::after {
+  opacity: 1;
+}
+
+.button {
+  display: inline-block;
+  min-width: 163px;
+  max-width: 100%;
+  white-space: nowrap;
+  padding: 8px 16px;
+  border-radius: 22px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #30C88F;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 100%);
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: hidden;
+}
+
+.button:hover {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=main.css.map */
