@@ -51,3 +51,28 @@
     opacity: 1;
   }
 }
+
+.sitenav__item--active .sitenav__link {
+  color: $dark-text-color;
+}
+
+.sitenav__item--active .sitenav__link::after,
+.sitenav__link:hover::after {
+  opacity: 1;
+}
+
+@include breakpoint-down (850px) {
+  // VARIANT A - MENYU PASTGA TUSHIB OLADI
+
+  .sitenav {
+    order: 1;
+    width: 100%;
+  }
+
+
+  // VARIANT B - MENYU BERKINIB OLADI
+
+  // .sitenav {
+  //   display: none;
+  // }
+}
